@@ -1,0 +1,21 @@
+{
+  "name": "readme-getter",
+  "version": "0.0.1",
+  "description": "A module for fetching README html from npm modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "keywords": [
+    "npm",
+    "readme"
+  ],
+  "author": "Dan Finlay",
+  "license": "BSD",
+  "dependencies": {
+    "browser-request": "~0.2.1",
+    "cheerio": "~0.12.1",
+    "request": "~2.25.0"
+  }
+}
