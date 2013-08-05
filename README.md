@@ -7,5 +7,4 @@ This module will return the HTML of an npm README from within a browser, and ret
     if(!er){
       console.log("Here's your readme: "+readme);
     }
-  });
-```
+  });```
