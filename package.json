@@ -1,6 +1,6 @@
 {
   "name": "readme-getter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A module for fetching README html from npm modules.",
   "main": "index.js",
   "scripts": {
