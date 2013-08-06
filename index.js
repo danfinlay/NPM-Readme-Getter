@@ -16,7 +16,7 @@ module.exports = function(module, writeStream){
 
 	    var moduleURL = 'http://npmjs.org/'+module;
       var req =	request(moduleURL).pipe(tr);
-      req.pipe(writeStream);
+      readmeStream.pipe(writeStream);
      
       var readmeCache = ''; 
       req.pipe(through(function(data){
