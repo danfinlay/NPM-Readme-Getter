@@ -14,7 +14,9 @@
   "author": "Dan Finlay",
   "license": "BSD",
   "dependencies": {
-    "cheerio": "~0.12.1",
-    "request": "~2.25.0"
+    "request": "~2.25.0",
+    "through": "~2.3.4",
+    "trumpet": "~1.5.5",
+    "level": "~0.12.0"
   }
 }
