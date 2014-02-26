@@ -1,24 +1,16 @@
-var assert = require('assert');
-var expect = require('expect.js');
+var test = require('tape');
+var request = require('request');
 
-var readmeGetter = require('../');
-var fs = require('fs');
+var readmeGetter = require('../')(request);
 
-describe('Fetching readme', function(){
+test('Fetching readme', function(t){
+	t.plan(2);
 
-  it('should have no errors', function(done){
-    readmeGetter('voxel-walk', function(er, readme){
-      expect(er).to.be(null);
-      done();
+    readmeGetter.getReadme('voxel-walk', function(er, readme){
+
+			t.equal(er, null);
+			t.equal(typeof readme, 'string');
+
     });
-  });
 
-  it('should fetch a requested readme', function(done){
-    readmeGetter('voxel-walk', function(er, readme){
-      expect(readme).to.be.ok();
-      expect(readme).to.be.a('string')
-      done();
-    });
-  });
-
-})
+});

@@ -1,10 +1,23 @@
-var request = require('browser-request');
 var through = require('through');
 var trumpet = require('trumpet');
+var request;
 
 var readmeCache = {};
 
-module.exports = function(module, callback) {
+module.exports = function(requester){
+	if(requester){
+		request = requester;
+		return new ReadmeGetter();
+	}else{
+		throw new Error("Must provide Request object to Readme-Getter!");
+	}	
+}
+
+var ReadmeGetter = function(){
+	this.getReadme = getReadme;
+}
+
+getReadme  = function(module, callback) {
 
   if (readmeCache[module]) {
     callback(null, readmeCache[module]);

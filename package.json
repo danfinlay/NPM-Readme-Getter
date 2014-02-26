@@ -1,10 +1,10 @@
 {
   "name": "readme-getter",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A module for fetching README html from npm modules.",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'No test specified' && exit 1"
+    "test": "node test/test.js"
   },
   "repository": "https://github.com/flyswatter/NPM-Readme-Getter.git",
   "keywords": [
@@ -15,7 +15,10 @@
   "license": "BSD",
   "dependencies": {
     "through": "~2.3.4",
-    "trumpet": "~1.6.3",
-    "browser-request": "~0.3.1"
+    "trumpet": "~1.6.3"
+  },
+  "devDependencies": {
+    "tape": "~2.5.0",
+    "request": "~2.34.0"
   }
 }
