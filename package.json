@@ -1,10 +1,10 @@
 {
   "name": "readme-getter",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "description": "A module for fetching README html from npm modules.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "echo 'No test specified' && exit 1"
   },
   "repository": "https://github.com/flyswatter/NPM-Readme-Getter.git",
   "keywords": [
@@ -14,9 +14,7 @@
   "author": "Dan Finlay",
   "license": "BSD",
   "dependencies": {
-    "request": "~2.25.0",
     "through": "~2.3.4",
-    "trumpet": "~1.5.5",
-    "level": "~0.12.0"
+    "trumpet": "~1.6.3"
   }
 }
