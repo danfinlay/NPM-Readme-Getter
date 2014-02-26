@@ -15,6 +15,7 @@
   "license": "BSD",
   "dependencies": {
     "through": "~2.3.4",
-    "trumpet": "~1.6.3"
+    "trumpet": "~1.6.3",
+    "browser-request": "~0.3.1"
   }
 }
